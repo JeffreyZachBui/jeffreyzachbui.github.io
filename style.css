@@ -12,3 +12,8 @@ p {
 .profile {
     border-radius: 15px;
 }
+
+.ferpa {
+    color: red;
+    font-size: 40px;
+}
