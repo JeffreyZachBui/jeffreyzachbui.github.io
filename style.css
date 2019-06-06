@@ -10,10 +10,15 @@ p {
 }
 
 .profile {
-    border-radius: 15px;
+    border-radius: 50%;
 }
 
 .ferpa {
     color: red;
     font-size: 40px;
+}
+
+.links {
+    font-size: 80px;
+    font-style: bold;
 }
