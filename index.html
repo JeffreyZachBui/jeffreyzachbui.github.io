@@ -33,12 +33,9 @@
 
 		
 		<div class="wrap-contact100">
-			<form target = "_blank" class="contact100-form validate-form" action = "https://cogna.herokuapp.com/message" method = "POST">
+			<form target="_self" class="contact100-form validate-form" action = "https://cogna.herokuapp.com/message" method = "POST">
 				
 				<div>
-					<!-- <svg src = "images/logo/grad.svg">
-						<text font-family = "montserrat"></text>
-					</svg> -->
 					<img class = "logo" src = "images/logo/grad_text_15.png">
 				</div>
 		
@@ -61,19 +58,22 @@
 				</div>
 
 				<div class="wrap-input100" >
-					<input class="input100" placeholder = "Birthday" type="text" onfocus= "(this.type='date')" name="Birthday">
+					<input class="input100" placeholder = "Birthday" type="text" onfocus= "(this.type='date')" name="birthday">
 					<span class="focus-input100"></span>
 				</div>
 
 
 				<div class="container-contact100-form-btn">
-					<button onclick="yahoo.com" class="contact100-form-btn">
+					<button class="contact100-form-btn">
 						<span>
 							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							<input type = "submit" value = "">
 							Subscribe
 						</span>
 					</button>
 				</div>
+				
+
 			</form>
 		</div>
 	</div>

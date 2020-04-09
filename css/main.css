@@ -221,7 +221,7 @@ iframe {
   display: block;
   width: 100%;
   background: #fff;
-  border-radius: 31px;
+  border-radius: 15px;
   font-family: montserrat;
   font-size: 18px;
   color: #0f0053;
@@ -296,7 +296,7 @@ textarea.input100 {
   min-width: 150px;
   height: 62px;
   background-color: transparent;
-  border-radius: 31px;
+  border-radius: 15px;
 
   font-family: montserrat;
   font-size: 16px;
@@ -329,8 +329,7 @@ textarea.input100 {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  border-radius: 31px;
-  background-color: ;
+  border-radius: 15px;
   pointer-events: none;
   
   -webkit-transition: all 0.4s;
