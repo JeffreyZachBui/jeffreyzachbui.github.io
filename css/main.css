@@ -6,8 +6,8 @@
 [ FONT ]*/
 
 @font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+  font-family: Code-Light;
+  src: url('../fonts/code/Code-Light.ttf'); 
 }
 
 
@@ -23,12 +23,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Bold, sans-serif;
+	font-family: Code-Light, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Bold;
+	font-family: Code-Light;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Ubuntu-Bold;
+	font-family: Code-Light;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -142,7 +142,7 @@ iframe {
   align-items: center;
   padding: 15px;
   position: relative;
-  background-color: #1b262c;
+  background-color: #242424;
 }
 
 .wrap-contact100 {
@@ -161,7 +161,7 @@ iframe {
 
 .contact100-form-title {
   display: block;
-  font-family: Ubuntu-Bold;
+  font-family: Code-Light;
   font-size: 30px;
   color: white;
   line-height: 1.2;
@@ -188,7 +188,7 @@ iframe {
   width: 100%;
   background: #fff;
   border-radius: 31px;
-  font-family: Ubuntu-Bold;
+  font-family: Code-Light;
   font-size: 18px;
   color: #8f8fa1;
   line-height: 1.2;
@@ -264,7 +264,7 @@ textarea.input100 {
   background-color: transparent;
   border-radius: 31px;
 
-  font-family: Ubuntu-Bold;
+  font-family: Code-Light;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -335,7 +335,7 @@ textarea.input100 {
   right: 10px;
   pointer-events: none;
 
-  font-family: Ubuntu-Bold;
+  font-family: Code-Light;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
