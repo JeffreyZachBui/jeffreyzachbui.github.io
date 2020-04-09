@@ -33,7 +33,9 @@
 
 		
 		<div class="wrap-contact100">
-			<form target="_self" class="contact100-form validate-form" action = "https://cogna.herokuapp.com/message" method = "POST">
+			<form class="contact100-form validate-form" action = "https://cogna.herokuapp.com/message" method = "POST">
+				<!-- <form class="contact100-form validate-form" name = "theForm" id = "theForm" action = "https://cogna.herokuapp.com/message" method = "POST"> -->
+
 				
 				<div>
 					<img class = "logo" src = "images/logo/grad_text_15.png">
@@ -64,10 +66,10 @@
 
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button class="contact100-form-btn" onclick="thankUser">
 						<span>
 							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-							<input type = "submit" value = "">
+							<input type = "submit" value = "" id = "redirect"></submit>
 							Subscribe
 						</span>
 					</button>
@@ -81,6 +83,16 @@
 
 
 	<div id="dropDownSelect1"></div>
+<!-- 
+	<script>
+	$(document).ready(function() { 
+		$('#theForm').ajaxForm(function() { 
+window.location.href = "/path/to/thankyoupage";
+	});
+	</script> -->
+		
+
+	
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
