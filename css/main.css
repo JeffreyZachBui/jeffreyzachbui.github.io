@@ -6,8 +6,8 @@
 [ FONT ]*/
 
 @font-face {
-  font-family: Code-Light;
-  src: url('../fonts/code/Code-Light.ttf'); 
+  font-family: lato;
+  src: url('../fonts/Lato/Lato-Regular.ttf/'); 
 }
 
 
@@ -23,12 +23,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Code-Light, sans-serif;
+	font-family: lato, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Code-Light;
+	font-family: lato;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Code-Light;
+	font-family: lato;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -161,7 +161,7 @@ iframe {
 
 .contact100-form-title {
   display: block;
-  font-family: Code-Light;
+  font-family: lato;
   font-size: 30px;
   color: white;
   line-height: 1.2;
@@ -169,6 +169,20 @@ iframe {
   text-align: center;
   padding-bottom: 49px;
 }
+
+/*------------------------------------------------------------------
+[ Logo ]*/
+.logo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-bottom: 7%;
+}
+
+
+/*---------------------------------------------*/
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -188,7 +202,7 @@ iframe {
   width: 100%;
   background: #fff;
   border-radius: 31px;
-  font-family: Code-Light;
+  font-family: lato;
   font-size: 18px;
   color: #8f8fa1;
   line-height: 1.2;
@@ -264,7 +278,7 @@ textarea.input100 {
   background-color: transparent;
   border-radius: 31px;
 
-  font-family: Code-Light;
+  font-family: lato;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -335,7 +349,7 @@ textarea.input100 {
   right: 10px;
   pointer-events: none;
 
-  font-family: Code-Light;
+  font-family: lato;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
