@@ -246,7 +246,7 @@ textarea.input100 {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  border-radius: 28px;
+  border-radius: 15px;
   background-color: #fff;
   pointer-events: none;
   
