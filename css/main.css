@@ -176,6 +176,17 @@ iframe {
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 2%;
+}
+
+.contact100-form-sub {
+  display: block;
+  font-family: montserrat;
+  font-size: 14px;
+  color: white;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
   padding-bottom: 49px;
 }
 
