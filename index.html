@@ -26,6 +26,26 @@
 <!--===============================================================================================-->
 
 </head>
+<script>
+	function submit() {
+		var request = new XMLHttpRequest();
+		request.open("POST", "https://cogna.herokuapp.com/message", true);  
+		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		var name = document.getElementById("name").value;
+		var email = document.getElementById("email").value;
+		var birthday = document.getElementById("birthday").value;
+		var params = "name=" + name + "&email=" + email + "&birthday=" + birthday;
+		request.onreadystatechange = function()
+		{
+			if (request.readyState == 4 && request.status == 200)
+			{
+				var response = request.responseText;
+				console.log(response);
+			}
+		}
+		request.send(params);
+	}
+</script>
 <body>
 
 	
@@ -33,16 +53,13 @@
 
 		
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action = "https://cogna.herokuapp.com/message" method = "POST">
-				<!-- <form class="contact100-form validate-form" name = "theForm" id = "theForm" action = "https://cogna.herokuapp.com/message" method = "POST"> -->
-
-				
+			<form id = "myForm" class="contact100-form validate-form">
 				<div>
-					<img class = "logo" src = "images/logo/grad_text_15.png">
+					<img class = "logo" src = "images/logo/grad_text_15.png" alt="logo">
 				</div>
 		
 				<span class="contact100-form-title">
-					JOIN THE NEXT EVOLUTION OF SLEEP
+					JOIN THE NEXT REVOLUTION IN SLEEP
 				</span>
 
 				<span class="contact100-form-sub">
@@ -50,26 +67,26 @@
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
-					<input class="input100" type="text" name="name" placeholder="Full Name">
+					<input class="input100" type="text" name="name" placeholder="Full Name" id="name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
-					<input class="input100" type="text" name="email" placeholder="E-mail">
+					<input class="input100" type="text" name="email" placeholder="E-mail" id="email">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100" >
-					<input class="input100" placeholder = "Birthday" type="text" onfocus= "(this.type='date')" name="birthday">
+					<input class="input100" placeholder = "Birthday" type="text" onfocus= "(this.type='date')" name="birthday" id="birthday">
 					<span class="focus-input100"></span>
 				</div>
 
 
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn" onclick="thankUser">
+				<div class="container-contact100-form-btn" onclick="submit()">
+					<button class="contact100-form-btn">
 						<span>
 							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-							<input type = "submit" value = "" id = "redirect"></submit>
+							<!-- <input type = "submit" onclick="s/ubmit()"></submit> -->
 							Subscribe
 						</span>
 					</button>
@@ -79,10 +96,8 @@
 			</form>
 		</div>
 	</div>
-
-
-
 	<div id="dropDownSelect1"></div>
+
 <!-- 
 	<script>
 	$(document).ready(function() { 
@@ -119,6 +134,9 @@ window.location.href = "/path/to/thankyoupage";
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+
+
+	
 </script>
 
 </body>
