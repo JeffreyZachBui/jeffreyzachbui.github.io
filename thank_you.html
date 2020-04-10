@@ -42,7 +42,11 @@
 			if (request.readyState == 4 && request.status == 200)
 			{
 				var response = request.responseText;
-				window.location.href = "thank_you.html";
+				// window.location = "yahoo.com";
+				window.onload = function what(){
+					document.getElementById('questions').innerHTML = '';
+				};
+				// document.getElementById("questions").innerHTML="";
 				console.log(response);
 				
 
@@ -64,7 +68,6 @@
 
 		
 		<div class="wrap-contact100">
-			<form id = "myForm" class="contact100-form validate-form">
 				<div>
 					<img class = "logo" src = "images/logo/grad_text_15.png" alt="logo">
 				</div>
@@ -77,85 +80,13 @@
 					Subscribe to our mailing list to stay updated.
 				</span>
 
-				<div class = "questions">
-					<div class="wrap-input100 validate-input" data-validate="Please enter your name">
-						<input class="input100" type="text" name="name" placeholder="Full Name" id="name">
-						<span class="focus-input100"></span>
-					</div>
+				<span class="contact100-form-title">
+					Thank you for subscribing!
+				</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
-						<input class="input100" type="text" name="email" placeholder="E-mail" id="email">
-						<span class="focus-input100"></span>
-					</div>
 
-					<div class="wrap-input100" >
-						<input class="input100" placeholder = "Birthday" type="text" onfocus= "(this.type='date')" name="birthday" id="birthday">
-						<span class="focus-input100"></span>
-					</div>
-
-					
-					<div class="container-contact100-form-btn">
-						<div onclick="submit()" class="contact100-form-btn">
-							<!-- <button onclick="submit()" class="contact100-form-btn" onSubmit="document.getElementById('submit').disabled=true;"> -->
-								<span >
-									<i class = "fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-									<!-- <input type = "submit" onclick="s/ubmit()"></submit> -->
-									Subscribe
-								</span>
-							</button>
-						<!-- </div> -->
-							
-
-							
-					</div>
-				</div>
-				
-
-			</form>
 		</div>
-	</div>
-	<div id="dropDownSelect1"></div>
 
-<!-- 
-	<script>
-	$(document).ready(function() { 
-		$('#theForm').ajaxForm(function() { 
-window.location.href = "/path/to/thankyoupage";
-	});
-	</script> -->
-		
-
-	
-
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<!-- <script src="js/main.js"></script> -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
- -->
-
-	
-</script>
 
 </body>
 </html>
